@@ -1,8 +1,8 @@
 ---
 # defaults file for awx_directory_sync
 
-remote_worker_directory: /var/lib/tftproot
-awx_directory: /var/lib/tftproot
+remote_worker_directory: /var/lib/tftpboot
+awx_directory: /var/lib/tftpboot
 awx_host: 192.168.252.9
 rsync_username: awx
 remote_worker_hostnames:
