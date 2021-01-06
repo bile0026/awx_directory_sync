@@ -2,6 +2,5 @@
 - name: Sync AWX Directory to Remote Nodes
   hosts: all
   gather_facts: true
-  become: true
   roles:
     - awx_directory_sync

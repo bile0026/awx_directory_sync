@@ -7,5 +7,4 @@
     dest: "{{ remote_worker_directory }}"
     recursive: true
     times: true
-    mode: push
   delegate_to: "{{ awx_host }}"
