@@ -1,2 +1,10 @@
 ---
 # tasks file for awx_directory_sync
+
+- name: Sync Push {{ awx_directory }} to Remote Nodes
+  ansible.posix.synchronize:
+    src: "{{ awx_directory }}"
+    dest: "{{ remote_worker_directory }}"
+    recursive: true
+    times: true
+  delegate_to: "{{ awx_host }}"
