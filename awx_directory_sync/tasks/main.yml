@@ -6,5 +6,4 @@
     src: "{{ awx_directory }}"
     dest: "{{ remote_worker_directory }}"
     recursive: true
-    times: true
   delegate_to: "{{ awx_host }}"
