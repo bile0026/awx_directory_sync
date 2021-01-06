@@ -4,7 +4,7 @@
 - name: Sync Push {{ awx_directory }} to Remote Nodes
   ansible.posix.synchronize:
     src: "{{ awx_directory }}"
-    dest: rsync:/"{{ remote_worker_directory }}"
+    dest: "{{ remote_worker_directory }}"
     recursive: true
     times: true
   delegate_to: "{{ awx_host }}"
