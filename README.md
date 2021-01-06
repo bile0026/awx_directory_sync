@@ -1,2 +1,3 @@
-# Ansible_Role_Default
+# awx_directory_sync
+
 default structure for ansible
